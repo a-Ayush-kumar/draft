@@ -37,7 +37,7 @@ export function Footer() {
             
             <li>
             <Link
-              href="/FAQ's"
+              href="/FAQs"
               className="text-[#FFD700] hover:underline"
             >
               FAQs
