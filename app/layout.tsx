@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "./components/footer";
-import { Navbar } from "./components/navbar";
-
+import { Toaster } from "sonner";
+import { SessionWrapper } from "./components/ui/sessionWrapper";
 
 export const metadata: Metadata = {
   title: "Legal Drafts",
@@ -17,7 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-[#031e2b] text-[#3E423A]">
-        <Navbar />
+        <SessionWrapper children={undefined}/>
+        <Toaster />
         {children}
         <Footer />
       </body>
